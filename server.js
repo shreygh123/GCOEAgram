@@ -42,10 +42,7 @@ mongoose.connect(
     }
   }
 );
-  // mongoose.connect('mongodb+srv://shrey:120ghuge4664@cluster0.siuid.mongodb.net/gcoeagram',{ useNewUrlParser: true, useUnifiedTopology: true },
-  // () => {
-  //   console.log('Connected to MongoDB');
-  // });
+  
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "images");
